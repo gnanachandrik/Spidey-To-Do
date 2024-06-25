@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'spidermann';
+    src: url(fonts/The\ Amazing\ Spider-Man.ttf);
+}
+@font-face {
+    font-family: 'infected';
+    src: url(fonts/INFECTED.ttf);
+}
+@font-face {
+    font-family: 'likethis';
+    src: url(fonts/Hey\ Comic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/spider-men\ bg.jpeg);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.to-do{
+    /* z-index: 1; */
+    width: 100%;
+    max-width: 540px;
+    background: rgb(254, 254, 254);
+    background-color: gray;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 40px;
+    
+}
+.to-do h2{
+    color: antiquewhite;
+    font-family: 'spidermann', 'fantasy';
+    font-size: 45px;
+    font-weight: bolder;
+}
+.to-do h2 img{
+    margin-left: 10px;
+    /* width: 80px;
+    height: 80px; */
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+}
+::placeholder{
+    font-family:'likethis','impact' ;
+    font-size: 15px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    margin: auto;
+    /* padding: 12px 8px 12px 50px; */
+    background-color: rgb(199, 7, 7);
+    color: antiquewhite;
+    font-family: 'infected','fantasy';
+    font-weight: lighter;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/* FOR LISTS */
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/Circle-PNG-HD.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 15px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/Spider-Web.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: antiquewhite;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #636161;
+}
+
+@media only screen and (max-width:650px){
+    .to-do h2{
+        color: antiquewhite;
+        font-family: 'spidermann', 'fantasy';
+        font-size: 35px;
+        font-weight: bolder;
+        margin-left: 5px;
+        margin-right: 0%;
+    }
+    .to-do h2 img{
+        margin-left: 0px;
+        width: 80px;
+        height: 80px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: #fff; */
+        border-radius: 30px;
+        padding-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 5px;
+    }
+    button{
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .to-do h2{
+        color: antiquewhite;
+        font-family: 'spidermann', 'fantasy';
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 10px;
+        margin-right: 0%;
+    }
+    .to-do h2 img{
+        margin-left: 1px;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+}
