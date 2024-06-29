@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(/spider-men\ bg.jpeg);
+    background: url(spider-men bg.jpeg);
 }
 .container{
     width: 100%;
@@ -108,7 +108,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/Circle-PNG-HD.png);
+    background-image: url(Circle-PNG-HD.png);
     background-size: cover;
     background-position: center;
     top: 10px;
@@ -119,7 +119,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(/Spider-Web.png);
+    background-image: url(Spider-Web.png);
 }
 
 ul li span{
